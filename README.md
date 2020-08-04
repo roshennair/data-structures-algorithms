@@ -1,5 +1,5 @@
 # Data Structures and Algorithms
-## Purpose
+
 I created this repository to centralize my implementations of various popular data structures and algorithms as I learn them throughout my journey as a software engineer :computer:. 
 
 **DISCLAIMER**: These implementations are meant to be readable and easily comprehensibly from a beginner's perspective, and therefore these most likely aren't the most efficient implementations possible (by a long shot).
