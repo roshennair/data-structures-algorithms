@@ -4,26 +4,32 @@
  * - Overall space complexity: O(n), n = Length of array 
  */
 class MyArray {
-    // Instantiates a new empty array
-    // Time complexity: O(1)
-    // Space complexity: O(1)
+    /**
+     * - Instantiates a new empty array
+     * - Time complexity: O(1)
+     * - Space complexity: O(1)
+     */
     constructor() {
         this.data = {};
         this.length = 0;
     }
 
-    // Returns the element at a given index
-    // Time complexity: O(1)
-    // Space complexity: O(1)
+    /** 
+     * - Returns the element at a given index
+     * - Time complexity: O(1)
+     * - Space complexity: O(1)
+     */
     lookup(index) {
         if (index < 0 || index >= this.length) throw new Error(`Index ${index} is out of bounds.`);
         
         return this.data[index];
     }
 
-    // Inserts an element at the end of the array
-    // Time complexity: O(1)
-    // Space complexity: O(1)
+    /** 
+     * - Inserts an element at the end of the array
+     * - Time complexity: O(1)
+     * - Space complexity: O(1)
+     */
     push(element) {
         if (element === undefined) throw new Error('This function requires 1 argument: element.');
         
@@ -32,9 +38,11 @@ class MyArray {
         return this.length;
     }
 
-    // Removes the element at the end of the array
-    // Time complexity: O(1)
-    // Space complexity: O(1)
+    /** 
+     * - Removes the element at the end of the array
+     * - Time complexity: O(1)
+     * - Space complexity: O(1)
+     */
     pop() {
         if (this.length < 1) throw new Error('This array is empty.');
         
@@ -44,9 +52,11 @@ class MyArray {
         return deletedElement;
     }
 
-    // Inserts an element at a given index
-    // Time complexity: O(n), n = Length of array
-    // Space complexity: O(1)
+    /** 
+     * - Inserts an element at a given index
+     * - Time complexity: O(n), n = Length of array
+     * - Space complexity: O(1)
+     */
     insert(element, index) {
         if (element === undefined) {
             throw new Error('This method requires an element argument');
@@ -69,9 +79,11 @@ class MyArray {
         return this.length;
     }
     
-    // Removes the element at a given index
-    // Time complexity: O(n), n = Length of array
-    // Space complexity: O(1)
+    /** 
+     * - Removes the element at a given index
+     * - Time complexity: O(n), n = Length of array
+     * - Space complexity: O(1)
+     */
     delete(index) {
         if (index < 0 || index >= this.length) {
             throw new Error(`Index ${index} is out of bounds.`);
