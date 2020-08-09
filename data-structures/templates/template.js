@@ -8,16 +8,16 @@ class DataStructureTemplate {
      * - Time complexity: O()
      * - Space complexity: O()
      */
-    constructor(size) {
-        
+    constructor() {
+        throw new Error('Not implemented');
     }
-
+    
     /**
-     * - Function
+     * - Functionality
      * - Time complexity: O()
      * - Space complexity: O()
      */
-    method(key) {
-        
+    method() {
+        throw new Error('Not implemented');
     }
 }
