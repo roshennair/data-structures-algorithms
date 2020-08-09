@@ -1,5 +1,7 @@
 /**
  * A helper class for instantiating linked list nodes
+ * 
+ * Overall space complexity: O(1)
  */
 class SLLNode {
     /**
