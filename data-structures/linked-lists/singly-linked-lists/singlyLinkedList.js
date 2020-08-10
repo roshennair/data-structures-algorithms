@@ -1,7 +1,6 @@
 /**
- * A helper class for instantiating linked list nodes
- * 
- * Overall space complexity: O(1)
+ * - A helper class for instantiating linked list nodes
+ * - Overall space complexity: O(1)
  */
 class SLLNode {
     /**
@@ -142,11 +141,10 @@ class SinglyLinkedList {
      */
     print() {
         const printArray = [];
-        let currentNode = this.head, count = 0;
-        while (count < this.length) { // O(n)
+        let currentNode = this.head;
+        while (currentNode !== null) { // O(n)
             printArray.push(currentNode.value);
             currentNode = currentNode.next;
-            count++;
         }
         console.log(printArray);
     }
