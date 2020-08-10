@@ -100,6 +100,7 @@ class DoublyLinkedList {
         const newNode = new DLLNode(value);
         const prevNode = this.lookup(index - 1); // O(n), n = Length of linked list
         const nextNode = prevNode.next;
+        // Reroute pointers
         prevNode.next = newNode;
         newNode.prev = prevNode;
         newNode.next = nextNode;
