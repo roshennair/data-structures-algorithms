@@ -54,7 +54,7 @@ class LinkedListStack {
     pop() {
         if (this.length === 0) throw new Error('No elements to pop from empty stack');
 
-        const poppedElement = this.top.value;
+        let poppedElement = this.top.value;
         this.top = this.top.next;
         this.length--;
         return poppedElement;
