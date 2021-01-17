@@ -1,4 +1,4 @@
-def selection_sort(nums):
+def selection_sort(arr):
     """
     My Python implementation of selection sort
 
@@ -9,13 +9,13 @@ def selection_sort(nums):
     Space complexity: O(1)
     """
 
-    for i in range(len(nums)):
+    for i in range(len(arr)):
         # Initialize current value as min
         min = i
-        for j in range(i + 1, len(nums)):
+        for j in range(i + 1, len(arr)):
             # Update min if new minimum found
-            if nums[j] < nums[min]:
+            if arr[j] < arr[min]:
                 min = j
         # Swap current value with min value
-        nums[i], nums[min] = nums[min], nums[i]
-    return nums
+        arr[i], arr[min] = arr[min], arr[i]
+    return arr

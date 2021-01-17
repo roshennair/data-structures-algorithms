@@ -1,4 +1,4 @@
-def bubble_sort(nums):
+def bubble_sort(arr):
     """
     My Python implementation of bubble sort
 
@@ -10,10 +10,10 @@ def bubble_sort(nums):
     """
 
     # One iteration for each element
-    for i in range(len(nums)):
+    for i in range(len(arr)):
         # One pass through list for
-        for j in range(len(nums) - 1):
+        for j in range(len(arr) - 1):
             # Compare each pair and swap if not in order
-            if nums[j] > nums[j + 1]:
-                nums[j], nums[j + 1] = nums[j + 1], nums[j]
-    return nums
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+    return arr

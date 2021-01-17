@@ -1,4 +1,4 @@
-def insertion_sort(nums):
+def insertion_sort(arr):
     """
     My Python implementation of insertion sort
 
@@ -9,15 +9,15 @@ def insertion_sort(nums):
     Space complexity: O(1)
     """
 
-    for i in range(len(nums)):
+    for i in range(len(arr)):
         # Store current value
-        current_value = nums[i]
+        current_value = arr[i]
         # Initialize j to current index
         j = i
         # Move all previous values greater than current value to the right
-        while j > 0 and nums[j - 1] > current_value:
-            nums[j] = nums[j - 1]
+        while j > 0 and arr[j - 1] > current_value:
+            arr[j] = arr[j - 1]
             j -= 1
         # Add current value to the empty slot
-        nums[j] = current_value
-    return nums
+        arr[j] = current_value
+    return arr
