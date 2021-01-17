@@ -25,7 +25,7 @@ def merge(left, right):
     return result
 
 
-def merge_sort(nums):
+def merge_sort(arr):
     """
     My Python implementation of merge sort
 
@@ -36,8 +36,8 @@ def merge_sort(nums):
     Space complexity: O(n)
     """
 
-    if len(nums) < 2:
-        return nums
-    left = nums[0 : len(nums) // 2]  # O(n)
-    right = nums[len(nums) // 2 :]  # O(n)
+    if len(arr) < 2:
+        return arr
+    left = arr[0 : len(arr) // 2]  # O(n)
+    right = arr[len(arr) // 2 :]  # O(n)
     return merge(merge_sort(left), merge_sort(right))  # O(n log n)
