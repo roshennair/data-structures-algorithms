@@ -146,3 +146,5 @@ class BinarySearchTree {
 		return false;
 	}
 }
+
+module.exports = BinarySearchTree;

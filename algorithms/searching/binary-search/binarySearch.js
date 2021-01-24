@@ -20,10 +20,3 @@ function binarySearch(arr, value) {
 	// If not found
 	return -1;
 }
-
-const numbers = [1, 2, 3, 4, 5, 6, 9, 11, 25, 33];
-console.log(binarySearch(numbers, 3));
-console.log(binarySearch(numbers, 25));
-console.log(binarySearch(numbers, 9));
-console.log(binarySearch(numbers, 6));
-console.log(binarySearch(numbers, 20));

@@ -10,6 +10,3 @@ function linearSearch(arr, value) {
 	}
 	return -1;
 }
-console.log(linearSearch([1, 3, 4, 5, 6, 33, 9, 11, 25], 3));
-console.log(linearSearch([1, 3, 4, 5, 6, 33, 9, 11, 25], 25));
-console.log(linearSearch([1, 3, 4, 5, 6, 33, 9, 11, 25], 20));

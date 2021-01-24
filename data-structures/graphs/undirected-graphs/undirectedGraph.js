@@ -47,6 +47,20 @@ class UndirectedGraph {
 	}
 
 	/**
+	 * - Return all adjacent vertices of a given vertex in the graph
+	 * - Time complexity: O(1)
+	 * - Space complexity: O(1)
+	 */
+	getAdjacentVertices(vertex) {
+		if (!this.adjacencyList.has(vertex)) {
+			console.log(`Graph does not contain a vertex with value of ${vertex}`);
+			return false;
+		}
+
+		return this.adjacencyList.get(vertex);
+	}
+
+	/**
 	 * - Print all the existing edges in the graph
 	 * - Time complexity: O(1)
 	 * - Space complexity: O(1)
@@ -55,3 +69,5 @@ class UndirectedGraph {
 		console.log(this.adjacencyList);
 	}
 }
+
+module.exports = UndirectedGraph;
