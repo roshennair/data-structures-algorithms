@@ -25,24 +25,6 @@ function fibonacci(n) {
 	return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
-const memo = new Map([[0, 0], [1, 1]]);
-/**
- * - Returns the Fibonacci number at the nth index in the Fibonacci sequence
- * - Time complexity: O(n)
- * - Space complexity: O(n)
- * - More efficient, uses a memo to store calculated values, avoiding redundant operations
- */
-function fibonacciMemoized(n) {
-	if (n < 0) throw new Error(`Input value ${n} is not a positive integer.`);
-	if (memo.has(n)) {
-		return memo.get(n);
-	} else {
-		let fibValue = fibonacciMemoized(n - 1) + fibonacciMemoized(n - 2);
-		memo.set(n, fibValue);
-		return fibValue;
-	}
-}
-
 /**
  * - Returns the reverse of the input string
  * - Time complexity: O(n^2) = O(n) slice * O(n) recursive call stack
