@@ -8,7 +8,6 @@ I created this repository to centralize my implementations of various popular da
 
 ## Future Plans
 Although most/all of these implementations were initially written in JavaScript, my goal is to expand this repository to include implementations in other languages I plan to learn in the future, namely:
-- Python
-- Java
 - C++
+- Java
 - Go 
