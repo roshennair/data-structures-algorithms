@@ -1,4 +1,4 @@
-# Data Structures and Algorithms Reference
+# Data Structures and Algorithms Implementations
 
 ![Data Structures & Algorithms](https://firebasestorage.googleapis.com/v0/b/roshen-nair.appspot.com/o/project-images%2Fdata-structures-algorithms.jpg?alt=media&token=6360dd7e-7622-4ea7-b7ec-8fe56148e44b)
 
